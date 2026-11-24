@@ -1,0 +1,8 @@
+[
+  { "sku": "CO-001", "nombre": "Coco rallado 500 g", "precio": 12000, "stock": 40 },
+  { "sku": "CO-002", "nombre": "Aceite de coco 1 L", "precio": 38000, "stock": 15 },
+  { "sku": "CO-003", "nombre": "Cocadas surtidas x12", "precio": 18000, "stock": 25 },
+  { "sku": "CO-004", "nombre": "Leche de coco 400 ml", "precio": 9500, "stock": 60 },
+  { "sku": "CO-005", "nombre": "Harina de coco 1 kg", "precio": 24000, "stock": 20 },
+  { "sku": "CO-006", "nombre": "Agua de coco 1 L", "precio": 7500, "stock": 30 }
+]

@@ -1,0 +1,9 @@
+[
+  { "nombre": "Medellín, Colombia", "lat": 6.2442, "lon": -75.5812 },
+  { "nombre": "Bogotá, Colombia", "lat": 4.7110, "lon": -74.0721 },
+  { "nombre": "Cali, Colombia", "lat": 3.4516, "lon": -76.5320 },
+  { "nombre": "Cartagena, Colombia", "lat": 10.3910, "lon": -75.4794 },
+  { "nombre": "Madrid, España", "lat": 40.4168, "lon": -3.7038 },
+  { "nombre": "Miami, EE. UU.", "lat": 25.7617, "lon": -80.1918 },
+  { "nombre": "Ciudad de México, México", "lat": 19.4326, "lon": -99.1332 }
+]

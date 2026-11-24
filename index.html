@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coquito Amarillo SAS — Tienda en línea</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header><h1>Coquito Amarillo SAS</h1><p>Tienda en línea</p></header>
+  <div id="avisos" class="aviso" role="status" aria-live="polite"></div>
+
+  <main>
+    <section aria-labelledby="t-cliente">
+      <h2 id="t-cliente">1. Sus datos</h2>
+      <form id="formCliente" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" autocomplete="name">
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" type="email" autocomplete="email">
+        <label for="ciudad">Ciudad de entrega</label>
+        <select id="ciudad"><option value="">— Elija una ciudad —</option></select>
+        <button id="btnUbicacion" type="button" class="secundario">Usar mi ubicación</button>
+        <p id="destinoActual" class="nota">Destino: sin elegir</p>
+        <details>
+          <summary>Aviso de privacidad</summary>
+          <p>Coquito Amarillo SAS tratará su nombre, correo y ubicación solo para gestionar su pedido y el envío, conforme a la Ley 1581 de 2012. Los datos de tarjeta nunca se almacenan ni se envían.</p>
+        </details>
+        <label class="check"><input id="autoriza" type="checkbox"> Autorizo el tratamiento de mis datos personales.</label>
+        <button type="submit">Registrar datos</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="t-catalogo">
+      <h2 id="t-catalogo">2. Catálogo</h2>
+      <div id="catalogo" class="rejilla"></div>
+    </section>
+
+    <section aria-labelledby="t-carrito">
+      <h2 id="t-carrito">3. Carrito</h2>
+      <ul id="carrito" class="lista"></ul>
+    </section>
+
+    <section aria-labelledby="t-envio">
+      <h2 id="t-envio">4. Envío y moneda</h2>
+      <label for="moneda">Ver total en</label>
+      <select id="moneda"><option value="COP">COP — Peso colombiano</option><option value="USD">USD — Dólar</option><option value="EUR">EUR — Euro</option></select>
+      <button id="btnCotizar" type="button">Cotizar envío</button>
+      <dl id="totales" class="datos"></dl>
+    </section>
+
+    <section aria-labelledby="t-pago">
+      <h2 id="t-pago">5. Pago</h2>
+      <form id="formPago" novalidate>
+        <label for="medio">Medio de pago</label>
+        <select id="medio"><option value="tarjeta">Tarjeta</option><option value="pse">PSE</option><option value="nequi">Nequi</option></select>
+        <div id="campos-tarjeta">
+          <label for="tarNumero">Número de tarjeta</label><input id="tarNumero" inputmode="numeric" autocomplete="off" placeholder="4242 4242 4242 4242">
+          <label for="tarVence">Vence (MM/AA)</label><input id="tarVence" autocomplete="off" placeholder="12/30">
+          <label for="tarCvv">CVV</label><input id="tarCvv" type="password" inputmode="numeric" autocomplete="off">
+        </div>
+        <div id="campos-pse" hidden>
+          <label for="pseBanco">Banco</label>
+          <select id="pseBanco"><option value="">— Elija —</option><option>Bancolombia</option><option>Davivienda</option><option>Banco de Bogotá</option><option>BBVA</option></select>
+          <label for="pseDoc">Documento de identidad</label><input id="pseDoc" inputmode="numeric" autocomplete="off">
+        </div>
+        <div id="campos-nequi" hidden>
+          <label for="neqCel">Celular Nequi</label><input id="neqCel" inputmode="numeric" autocomplete="off" placeholder="3001234567">
+        </div>
+        <button type="submit">Pagar</button>
+      </form>
+    </section>
+
+    <section id="recibo" aria-labelledby="t-recibo" hidden>
+      <h2 id="t-recibo">Recibo</h2>
+      <dl id="reciboDatos" class="datos"></dl>
+    </section>
+
+    <section aria-labelledby="t-historial">
+      <h2 id="t-historial">Historial de compras</h2>
+      <ul id="historial" class="lista"></ul>
+      <button id="btnLimpiar" type="button" class="secundario">Borrar historial</button>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a> · Clima por <a href="https://open-meteo.com/">Open-Meteo.com</a></p>
+  </footer>
+</body>
+</html>
