@@ -1,8 +1,6 @@
-/** Registro de una compra: guarda copias (snapshots) de lo comprado. */
 export class Transaccion {
   #id; #fecha; #estado; #cliente; #items; #envio; #pago; #moneda; #tasa;
-
-  /** @param {object} d datos nuevos o provenientes de JSON */
+ 
   constructor(d) {
     this.#id = d.id ?? crypto.randomUUID();
     this.#fecha = d.fecha ?? new Date().toISOString();
@@ -30,7 +28,6 @@ export class Transaccion {
   get total() { return this.base + (this.#pago?.comision ?? 0); }
   get totalConvertido() { return this.total * this.#tasa; }
 
-  /** Cobra con cualquier MedioPago (polimorfismo). Lanza error si los datos no son válidos. */
   pagar(medio) {
     if (this.#estado === "APROBADA") throw new Error("Esta transacción ya fue pagada.");
     try {
@@ -43,7 +40,6 @@ export class Transaccion {
     }
   }
 
-  /** Solo se serializan datos no sensibles (nunca datos de tarjeta). */
   toJSON() {
     return {
       id: this.#id, fecha: this.#fecha, estado: this.#estado, cliente: this.#cliente,

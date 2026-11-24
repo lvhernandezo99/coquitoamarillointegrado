@@ -2,7 +2,7 @@
 
 Web App de una sola página (HTML5 + CSS3 + JavaScript) con modelo de dominio en POO y dos APIs externas.
 
-- **Repositorio:** _(pegar enlace)_
+- **Repositorio:** :** (https://github.com/lvhernandezo99/coquitoamarillointegrado.git)
 - **Demo (GitHub Pages):** _(pegar URL pública)_
 
 ## Ejecutar localmente

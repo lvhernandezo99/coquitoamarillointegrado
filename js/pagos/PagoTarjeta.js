@@ -1,6 +1,5 @@
 import { MedioPago } from "./MedioPago.js";
-
-/** Tarjeta: los datos viven solo en memoria y jamás se guardan ni se envían. */
+ 
 export class PagoTarjeta extends MedioPago {
   #numero; #vence; #cvv;
 
