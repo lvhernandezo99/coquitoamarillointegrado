@@ -3,7 +3,7 @@
 Web App de una sola página (HTML5 + CSS3 + JavaScript) con modelo de dominio en POO y dos APIs externas.
 
 - **Repositorio:** :** (https://github.com/lvhernandezo99/coquitoamarillointegrado.git)
-- **Demo (GitHub Pages):** 
+- **Demo (GitHub Pages):** (https://lvhernandezo99.github.io/coquitoamarillointegrado/)
 
 ## Ejecutar localmente
 Los módulos ES no cargan con doble clic (`file:`). Use la extensión **Live Server** de VS Code (clic derecho en `index.html` → *Open with Live Server*) o `npx serve`.
